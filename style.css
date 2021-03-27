@@ -1,0 +1,33 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Growing Underline on hover - START */
+
+.guoh h1 {
+  display: inline-block;
+  color: lightgray;
+  border-bottom: 2px solid lightgray;
+  transition: color 250ms ease-out;
+}
+.guoh h1:hover {
+  color: tomato;
+}
+
+.guoh h1::after {
+  position: relative;
+  top: 2px;
+  display: block;
+  content: '';
+  /* position: absolute; */
+  width: 0;
+  height: 2px;
+  background-color: tomato;
+  transition: width 250ms ease-out;
+}
+
+.guoh h1:hover::after {
+  width: 100%;
+}
+
+/* Growing Underline on hover - END */
