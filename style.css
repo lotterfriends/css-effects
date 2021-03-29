@@ -31,3 +31,34 @@ body {
 }
 
 /* Growing Underline on hover - END */
+
+
+.floh {
+  perspective: 1000px;
+}
+
+.foh-item {
+  background: lightgray;
+  border-radius: 50%;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  position: relative;
+  transition: 0.6s;
+	transform-style: preserve-3d;
+}
+
+.foh-item:hover {
+  background: tomato;
+  transform: rotateY(180deg);
+}
+
+.foh-item img {
+  width: 60%;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
